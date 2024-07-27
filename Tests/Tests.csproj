@@ -19,9 +19,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Algorithms\Algorithms.csproj" />
+    <ProjectReference Include="..\CustomCache\CustomCache.csproj" />
     <ProjectReference Include="..\ExecutionPipeline\ExecutionPipeline.csproj" />
     <ProjectReference Include="..\InjectIt\InjectIt.csproj" />
-    <ProjectReference Include="..\Interceptor\Interceptor.csproj" />
   </ItemGroup>
 
   <ItemGroup>
