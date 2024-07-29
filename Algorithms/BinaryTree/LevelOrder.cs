@@ -1,5 +1,8 @@
 ﻿namespace Algorithms.BinaryTree
 {
+    /// <summary>
+    /// Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+    /// </summary>
     public class LevelOrder
     {
         private Dictionary<int, IList<int>> levels = new Dictionary<int, IList<int>>();

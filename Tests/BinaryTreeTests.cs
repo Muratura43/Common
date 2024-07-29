@@ -5,7 +5,52 @@ namespace Tests
     public class BinaryTreeTests
     {
         [Test]
-        public void TestBinaryTree()
+        public void TestDFS()
+        {
+            var n = new TreeNode(5,
+                new TreeNode(4,
+                    new TreeNode(2),
+                    new TreeNode(8,
+                        new TreeNode(1))),
+                new TreeNode(6,
+                    new TreeNode(3),
+                    new TreeNode(7)));
+
+            TreeNode.DFS(n, Console.WriteLine);
+        }
+
+        [Test]
+        public void TestBFS()
+        {
+            var n = new TreeNode(5,
+                new TreeNode(4,
+                    new TreeNode(2),
+                    new TreeNode(8,
+                        new TreeNode(1))),
+                new TreeNode(6,
+                    new TreeNode(3),
+                    new TreeNode(7)));
+
+            TreeNode.BFS(n, Console.WriteLine);
+        }
+
+        [Test]
+        public void TestIsValidBinaryTree()
+        {
+            var n = new TreeNode(5,
+                new TreeNode(1),
+                new TreeNode(7,
+                    new TreeNode(6),
+                    new TreeNode(8)));
+
+            var bt = new IsValidBST();
+            var result = bt.Solution(n);
+
+            Assert.True(result);
+        }
+
+        [Test]
+        public void TestIsNotValidBinaryTree()
         {
             var n = new TreeNode(5,
                 new TreeNode(4,

@@ -1,5 +1,8 @@
 ﻿namespace Algorithms.BinaryTree
 {
+    /// <summary>
+    /// Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
+    /// </summary>
     public class SortedArrayToBST
     {
         public TreeNode Solution(int[] nums)
